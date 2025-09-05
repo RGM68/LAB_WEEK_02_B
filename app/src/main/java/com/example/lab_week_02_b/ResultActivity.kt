@@ -48,6 +48,9 @@ class ResultActivity : AppCompatActivity() {
             resultMessage.text = getString(R.string.color_code_result_message, colorCode?.uppercase())
         }
 
-
+        backButton.setOnClickListener {
+            val backIntent = Intent(this, MainActivity::class.java)
+            startActivity(backIntent)
+        }
     }
 }

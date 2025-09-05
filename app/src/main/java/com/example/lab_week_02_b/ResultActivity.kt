@@ -50,7 +50,7 @@ class ResultActivity : AppCompatActivity() {
 
         backButton.setOnClickListener {
             val backIntent = Intent(this, MainActivity::class.java)
-            startActivity(backIntent)
+            startActivity(backIntent) 
         }
     }
 }

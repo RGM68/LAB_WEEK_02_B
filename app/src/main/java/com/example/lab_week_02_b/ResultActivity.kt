@@ -49,8 +49,12 @@ class ResultActivity : AppCompatActivity() {
         }
 
         backButton.setOnClickListener {
-            val backIntent = Intent(this, MainActivity::class.java)
-            startActivity(backIntent) 
+            //val backIntent = Intent(this, MainActivity::class.java)
+            //startActivity(backIntent)
+            val resultIntent = Intent()
+            resultIntent.putExtra("result_key", "some value")
+            setResult(Activity.RESULT_OK, resultIntent)
+            finish()
         }
     }
 }
